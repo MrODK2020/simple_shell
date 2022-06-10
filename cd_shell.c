@@ -37,3 +37,8 @@ int cd_shell(data_shell *datash)
 		cd_dot(datash);
 		return (1);
 	}
+
+	cd_to(datash);
+
+	return (1);
+}
