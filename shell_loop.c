@@ -69,3 +69,9 @@ void shell_loop(data_shell *datash)
 			free(input);
 		}
 		else
+		{
+			loop = 0;
+			free(input);
+		}
+	}
+}
