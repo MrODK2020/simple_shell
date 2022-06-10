@@ -106,3 +106,6 @@ void free_line_list(line_list **head)
 			curr = curr->next;
 			free(temp);
 		}
+		*head = NULL;
+	}
+}
