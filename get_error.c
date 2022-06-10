@@ -34,3 +34,7 @@ int get_error(data_shell *datash, int eval)
 		write(STDERR_FILENO, error, _strlen(error));
 		free(error);
 	}
+
+	datash->status = eval;
+	return (eval);
+}
