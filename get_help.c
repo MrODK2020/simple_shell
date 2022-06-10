@@ -1,10 +1,11 @@
-include "main.h"
+#include "main.h"
 
 /**
  * get_help - function that retrieves help messages according builtin
  * @datash: data structure (args and input)
  * Return: Return 0
 */
+
 int get_help(data_shell *datash)
 {
 
@@ -27,3 +28,7 @@ int get_help(data_shell *datash)
 	else
 		write(STDERR_FILENO, datash->args[0],
 		      _strlen(datash->args[0]));
+
+	datash->status = 0;
+	return (1);
+}
