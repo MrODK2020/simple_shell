@@ -1,4 +1,4 @@
-include "main.h"
+#include "main.h"
 
 /**
  * _memcpy - copies information between void pointers.
@@ -86,3 +86,6 @@ char **_reallocdp(char **ptr, unsigned int old_size, unsigned int new_size)
 		newptr[i] = ptr[i];
 
 	free(ptr);
+
+	return (newptr);
+}
