@@ -124,3 +124,6 @@ int _unsetenv(data_shell *datash)
 	realloc_environ[j] = NULL;
 	free(datash->_environ[k]);
 	free(datash->_environ);
+	datash->_environ = realloc_environ;
+	return (1);
+}
