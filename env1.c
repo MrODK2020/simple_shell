@@ -75,3 +75,6 @@ int _env(data_shell *datash)
 		write(STDOUT_FILENO, "\n", 1);
 	}
 	datash->status = 0;
+
+	return (1);
+}
